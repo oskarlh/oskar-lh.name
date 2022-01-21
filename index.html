@@ -2,8 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="refresh" content="0; URL=https://oskar.pm/" />
 		<link rel="canonical" href="https://oskar.pm/" />
+		<script>
+			(() => {
+				const locWithCorrectHost = new URL(location);
+				locWithCorrectHost.host = "oskar.pm";
+				location.replace(locWithCorrectHost);
+			})();
+		</script>
+		<meta http-equiv="refresh" content="0; URL=https://oskar.pm/" />
 		<title>Oskar Larsson Högfeldt</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style>
@@ -13,6 +20,8 @@
 		</style>
 	</head>
 	<body>
-		<p>My website has moved to <a href="https://oskar.pm/">https://oskar.pm/</a></p>
+		<p>
+			My website is located at <a href="https://oskar.pm/">https://oskar.pm/</a>
+		</p>
 	</body>
 </html>

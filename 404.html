@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<script>
+			(() => {
+				const locWithCorrectHost = new URL(location);
+				locWithCorrectHost.host = "oskar.pm";
+				location.replace(locWithCorrectHost);
+			})();
+		</script>
+		<meta http-equiv="refresh" content="0; URL=https://oskar.pm/" />
+		<title>Oskar Larsson Högfeldt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				font-size: 1.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			My website is located at <a href="https://oskar.pm/">https://oskar.pm/</a>
+		</p>
+	</body>
+</html>
